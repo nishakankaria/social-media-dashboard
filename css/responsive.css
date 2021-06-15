@@ -1,0 +1,46 @@
+@media(max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+
+  .overview-today .today-cards {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media(max-width: 875px) {
+  .total-cards {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+
+}
+
+@media(min-width: 600px) {
+  hr {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  #theme {
+    background: var(--bg);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+  }
+
+  .total-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-today .today-cards {
+    grid-template-columns: 1fr;
+  }
+}
